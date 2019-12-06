@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>T I M E K I L L E R</title>
+        <meta http-equiv="content-type" content="text/html">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="inputs">
+            <span>Choose your own image </span><label class="file-container"><span>browse</span><input type="file" id="file"/></label>
+            <span>Columns: </span><input id="columns" type="number" min="1" max="20" value="5"/>
+            <span>Rows: </span><input id="rows" type="number" min="1" max="20" value="5"/>
+        </div>
+        
+        <!-- PUZZLE CONTAINER --> 
+        <div id="pussel" class="puzzle-container"></div>
+        
+        <!-- CONTAINER FOR THE PIECES -->
+        <div id="bitar" class="puzzle-container"></div>
+
+        <script type="application/ecmascript" src="puzzle.js"></script>
+    </body>
+
+</html>

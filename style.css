@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i&display=swap');
+
+* {
+    box-sizing: border-box;
+}  
+body {
+   /* background-color: pink; */
+    font-family: 'Poppins', sans-serif;
+}
+input {
+    margin-left: 1rem;
+    font-family: 'Poppins';
+}
+span {
+    margin-left: 1rem;
+    /*! margin-bottom: 1rem; */
+}
+
+.file-container {
+    overflow: hidden;
+    position: relative;
+    transition: background-color .3s ease-in-out;
+}
+.file-container > span {
+    margin: 1rem;
+    color: white;
+}
+
+.file-container:hover {
+    background-color: peru;
+}
+
+input[type="file"] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    opacity: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+/* Example stylistic flourishes */
+
+.file-container {
+    background: burlywood;
+    height: 1.7rem;
+    margin-bottom: -.5rem;
+    display: inline-block;
+    z-index:2;
+    color: black;
+    border-radius: .3em;
+    padding:;
+}
+.puzzle-container {
+    background-color: whitesmoke;
+    display: block;
+    float: left;
+    margin-top: 1rem;
+    box-shadow: 10px 10px 0 burlywood;
+}
+.puzzle-container:first-of-type {    
+}
+.puzzle-container:nth-of-type(2) {
+    margin-left: 1.2rem;
+    margin-right: 1.5rem;
+}
+
+.puzzle-container > .image-container {
+    position: relative;
+    float:left;
+    border: 1.5px dotted black;
+}
+
+.finished {
+    border: none !important;
+}
